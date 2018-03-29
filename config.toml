@@ -1,0 +1,24 @@
+theme = "hugo-lithium-theme"
+baseURL = "https://frrrenchies.github.io"
+languageCode = "en-us"
+title = "Frrrenchies"
+ignoreFiles = ["\\.Rmd$", "_files$", "_cache$"]
+
+[permalinks]
+    articles = "articles/:year/:month/:slug/"
+
+[[menu.main]]
+    name = "Packages"
+    url = "/packages/"
+    weight = 1
+
+[params]
+    description = "The tidyverse is an integrated collection of R packages designed to make data science fast, fluid, and fun."
+    # options for highlight.js (version, additional languages, and theme)
+    highlightjsVersion = "9.11.0"
+    highlightjsCDN = "//cdn.bootcss.com"
+    highlightjsLang = ["r", "yaml"]
+    highlightjsTheme = "github"
+
+    MathJaxCDN = "//cdn.bootcss.com"
+    MathJaxVersion = "2.7.1"
